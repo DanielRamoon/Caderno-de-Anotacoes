@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Caderno de Anotações
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo ao Caderno de Anotações, um aplicativo simples para fazer anotações!
 
-## Available Scripts
+## Backend
 
-In the project directory, you can run:
+Antes de iniciar o servidor backend, você precisará configurar a conexão com o banco de dados MongoDB. Siga estas etapas:
 
-### `npm start`
+1. Certifique-se de que o MongoDB esteja instalado em sua máquina ou em um servidor remoto.
+2. Crie um arquivo de configuração para as variáveis de ambiente do seu projeto, por exemplo, `.env`.
+3. Dentro deste arquivo, defina as informações de conexão com o banco de dados da seguinte maneira:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+   ```env
+   DB_CONNECTION_STRING=your_mongodb_connection_string_here
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+O backend deste projeto é responsável por fornecer os serviços necessários para gerenciar suas anotações. Ele foi construído usando Node.js e Express.js e utiliza o MongoDB como banco de dados. Abaixo, você encontrará informações relevantes sobre o backend:
 
-### `npm test`
+### Dependências
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `cors` (v2.8.5) - Middleware para habilitar requisições HTTP entre diferentes origens (CORS).
+- `express` (v4.18.2) - Framework para construção de aplicativos web em Node.js.
+- `mongoose` (v7.4.1) - Biblioteca para modelagem de objetos MongoDB.
+- `nodemon` (v3.0.1) - Utilizado para reiniciar automaticamente o servidor durante o desenvolvimento.
 
-### `npm run build`
+### Como Iniciar o Backend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para iniciar o servidor backend, execute o seguinte comando:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm run dev
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Isso iniciará o servidor e permitirá que você comece a usar o Caderno de Anotações.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Frontend
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+O frontend deste projeto é responsável por fornecer uma interface de usuário amigável para criar e visualizar suas anotações. Ele foi construído usando React.js e utiliza várias bibliotecas e dependências para uma experiência de usuário agradável. Abaixo, você encontrará informações relevantes sobre o frontend:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Dependências
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+@mui/material (v5.14.8) - Biblioteca de componentes para criar uma interface de usuário bonita.
+axios (v1.5.0) - Biblioteca para fazer requisições HTTP ao backend.
+react (v18.2.0) - Biblioteca principal para construir interfaces de usuário em React.
+react-dom (v18.2.0) - Renderizador React para a web.
+E outras bibliotecas e dependências necessárias.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Como Iniciar o Frontend
+Para iniciar o servidor de desenvolvimento do frontend, execute o seguinte comando
 
-### Code Splitting
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Isso iniciará o servidor de desenvolvimento e abrirá o Caderno de Anotações em seu navegador.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contribuição
+Este projeto é de código aberto, e as contribuições são bem-vindas! Sinta-se à vontade para criar problemas, propor melhorias e enviar solicitações de recebimento.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```

@@ -1,0 +1,20 @@
+/* Estilo para o contêiner dos botões de rádio */
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 5px;
+}
+
+/* Estilo para os rótulos dos botões de rádio quando não clicados */
+.MuiFormControlLabel-root
+  .MuiRadio-root.Mui-checked
+  ~ .MuiRadio-root
+  .MuiSvgIcon-root {
+  color: #ffd3ca;
+}
+
+/* Estilo para os rótulos dos botões de rádio quando clicados */
+.MuiFormControlLabel-root .MuiRadio-root .MuiSvgIcon-root {
+  color: #e88f7a;
+}
